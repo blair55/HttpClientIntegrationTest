@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{FC3C2352-9DB0-4A96-8B8B-91C9CCA697E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTests", "IntegrationTests\IntegrationTests.csproj", "{7A43A039-06CB-48AF-8FFE-0F0E4F636D9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{FC3C2352-9DB0-4A96-8B8B-91C9CCA697E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC3C2352-9DB0-4A96-8B8B-91C9CCA697E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC3C2352-9DB0-4A96-8B8B-91C9CCA697E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A43A039-06CB-48AF-8FFE-0F0E4F636D9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A43A039-06CB-48AF-8FFE-0F0E4F636D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A43A039-06CB-48AF-8FFE-0F0E4F636D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A43A039-06CB-48AF-8FFE-0F0E4F636D9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

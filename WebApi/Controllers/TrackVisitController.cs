@@ -6,10 +6,10 @@ using System.Web.Http;
 
 namespace WebApi.Controllers
 {
-    public class SetCookieController : ApiController
+    public class TrackVisitController : ApiController
     {
         /// <summary>
-        /// address: /api/setcookie
+        /// address: /api/trackvisit
         /// </summary>
         /// <returns></returns>
         public HttpResponseMessage Get()
