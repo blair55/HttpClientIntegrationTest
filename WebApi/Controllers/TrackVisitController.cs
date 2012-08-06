@@ -9,7 +9,7 @@ namespace WebApi.Controllers
     public class TrackVisitController : ApiController
     {
         /// <summary>
-        /// address: /api/trackvisit
+        /// uri: /api/trackvisit
         /// </summary>
         /// <returns></returns>
         public HttpResponseMessage Get()

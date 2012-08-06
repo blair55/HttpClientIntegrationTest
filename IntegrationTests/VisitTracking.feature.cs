@@ -75,16 +75,18 @@ this.ScenarioSetup(scenarioInfo);
 #line 6
  testRunner.Given("the api uri is local.trackmyvisit.com/api/trackvisit");
 #line 7
- testRunner.When("I hit the visit tracking uri");
+ testRunner.And("the expected cookie name is VisitId");
 #line 8
- testRunner.Then("the response HttpCode is OK");
+ testRunner.When("I hit the visit tracking uri");
 #line 9
- testRunner.And("the response sets a cookie");
+ testRunner.Then("the response HttpCode is OK");
 #line 10
- testRunner.And("the cookie name is VisitId");
+ testRunner.And("the response sets a cookie");
 #line 11
- testRunner.And("the value for VisitId is a valid Guid");
+ testRunner.And("the cookie name is correct");
 #line 12
+ testRunner.And("the cookie value is a valid Guid");
+#line 13
  testRunner.And("the cookie expiry is 7 days from now");
 #line hidden
             this.ScenarioCleanup();
