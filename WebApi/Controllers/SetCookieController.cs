@@ -1,39 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Web;
 using System.Web.Http;
 
 namespace WebApi.Controllers
 {
     public class SetCookieController : ApiController
     {
-        // GET api/values
-        public IEnumerable<string> Get()
+        /// <summary>
+        /// address: /api/setcookie
+        /// </summary>
+        /// <returns></returns>
+        public HttpResponseMessage Get()
         {
-            return new string[] { "value1", "value2" };
-        }
+            var cookie = new HttpCookie("VisitId")
+            {
+                Value = Guid.NewGuid().ToString(),
+                Expires = DateTime.Now.AddDays(7)
+            };
 
-        // GET api/values/5
-        public string Get(int id)
-        {
-            return "value";
-        }
+            HttpContext.Current.Response.Cookies.Add(cookie);
 
-        // POST api/values
-        public void Post(string value)
-        {
-        }
-
-        // PUT api/values/5
-        public void Put(int id, string value)
-        {
-        }
-
-        // DELETE api/values/5
-        public void Delete(int id)
-        {
+            return new HttpResponseMessage(HttpStatusCode.OK);
         }
     }
 }
