@@ -8,10 +8,8 @@ namespace WebApi.Controllers
 {
     public class TrackVisitController : ApiController
     {
-        /// <summary>
-        /// uri: /api/trackvisit
-        /// </summary>
-        /// <returns></returns>
+        // call using GET method to /api/trackvisit
+        
         public HttpResponseMessage Get()
         {
             var cookie = new HttpCookie("VisitId")
@@ -21,7 +19,7 @@ namespace WebApi.Controllers
             };
 
             HttpContext.Current.Response.Cookies.Add(cookie);
-
+            
             return new HttpResponseMessage(HttpStatusCode.OK);
         }
     }
